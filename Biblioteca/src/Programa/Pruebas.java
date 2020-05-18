@@ -9,6 +9,16 @@ import java.util.ArrayList;
 public class Pruebas {
 
 	public static void main(String[] args) {
+		
+		
+		Genero gen = Genero.Cientifico;
+		Date dat = new Date();
+		Autor aut = new Autor("autor","español",dat);
+		Libros prueba = new Libros(gen,aut, "titulo", "editorial", 1,3);
+		System.out.println(prueba);
+		
+		
+		
 		Biblioteca b = new Biblioteca();
 		
 		try {
